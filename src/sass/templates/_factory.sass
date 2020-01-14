@@ -18,5 +18,37 @@
 .slider
     width: 566px
     height: 334px
-    background-color: #d1c05e
+    
     margin-bottom: 60px
+.swiper
+    &-navigation
+        
+    &-pagination
+
+        &-bullet
+            left: 50%
+            margin: 0 2px
+            background-color: $white
+            &-active
+                background-color: $red
+    &-button
+        &-prev, &-next
+            
+            top: 327px  
+            width: 7px
+            height: 13px
+            font-size: 13px
+            color: $white
+            &::after
+                display: none
+        &-prev
+            z-index: 100
+            left: 40%
+            background: url('../img/arow-prev.svg') center no-repeat
+        &-next
+            left: 60%
+            background: url('../img/arow-next.svg') center no-repeat
+.swiper-container-horizontal>.swiper-pagination-bullets
+    
+    bottom: 19px
+        
