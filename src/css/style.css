@@ -370,109 +370,6 @@ template {
   margin-top: -5px;
 }
 
-@media screen and (max-width: 1090px) {
-  .menu__right {
-    margin-right: 2%;
-  }
-  .hero {
-    background: none;
-  }
-  .hero__text {
-    margin-right: 3%;
-    margin-left: 3%;
-  }
-  .modal {
-    display: none;
-  }
-  .dignities {
-    width: 100%;
-  }
-  .slider {
-    margin-left: 5%;
-  }
-  .advantages__content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    min-height: 995px;
-  }
-  .factory__content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: auto;
-  }
-  .factory__text {
-    margin: auto;
-    padding: 0;
-  }
-  .slider {
-    margin: auto;
-  }
-  .about__content {
-    margin-left: 3%;
-    margin-right: 3%;
-  }
-}
-
-@media screen and (max-width: 820px) {
-  .factory__content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .show__video {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0;
-  }
-  .assumptionmodal__form {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: auto;
-  }
-  .input__assumption {
-    margin-right: 0;
-    margin-top: 10px;
-  }
-  .input__assumptionlast {
-    margin-right: 0;
-    margin-top: 10px;
-  }
-}
-
 .header {
   background: url("../img/headerbg.jpg") no-repeat;
   max-height: 85px;
@@ -721,39 +618,38 @@ template {
   line-height: 13.55px;
 }
 
-.input__name {
+.input-group--name {
   position: relative;
 }
 
-.input__name::after {
-  content: url("../img/modal/human.png");
+.input-group--name::after {
+  content: url("../img/hero/name.png");
   position: absolute;
-  z-index: 9;
-  top: 7px;
+  top: 15px;
   right: 8px;
 }
 
-.input__email {
+.input-group--email {
   position: relative;
 }
 
-.input__email::after {
-  content: url("../img/modal/post.png");
+.input-group--email::after {
+  content: url("../img/hero/post.png");
   position: absolute;
   z-index: 9;
-  top: 12px;
+  top: 15px;
   right: 5px;
 }
 
-.input__phone {
+.input-group--phone {
   position: relative;
 }
 
-.input__phone::after {
-  content: url("../img/modal/mobile.png");
+.input-group--phone::after {
+  content: url("../img/hero/mobile.png");
   position: absolute;
   z-index: 9;
-  top: 9px;
+  top: 15px;
   right: 8px;
 }
 
@@ -1119,6 +1015,41 @@ template {
   border: none;
 }
 
+.input-groupass--name {
+  position: relative;
+}
+
+.input-groupass--name::after {
+  content: url("../img/hero/name.png");
+  position: absolute;
+  top: 15px;
+  right: 35px;
+}
+
+.input-groupass--email {
+  position: relative;
+}
+
+.input-groupass--email::after {
+  content: url("../img/hero/post.png");
+  position: absolute;
+  z-index: 9;
+  top: 15px;
+  right: 15px;
+}
+
+.input-groupass--phone {
+  position: relative;
+}
+
+.input-groupass--phone::after {
+  content: url("../img/hero/mobile.png");
+  position: absolute;
+  z-index: 9;
+  top: 15px;
+  right: 10px;
+}
+
 .photo {
   min-height: 400px;
   max-height: 400px;
@@ -1179,5 +1110,108 @@ template {
   font-weight: 300;
   line-height: 22px;
   max-width: 511px;
+}
+
+@media screen and (max-width: 1090px) {
+  .menu__right {
+    margin-right: 2%;
+  }
+  .hero {
+    background: none;
+  }
+  .hero__text {
+    margin-right: 3%;
+    margin-left: 3%;
+  }
+  .modal {
+    display: none;
+  }
+  .dignities {
+    width: 100%;
+  }
+  .slider {
+    margin-left: 5%;
+  }
+  .advantages__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    min-height: 995px;
+  }
+  .factory__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  .factory__text {
+    margin: auto;
+    padding: 0;
+  }
+  .slider {
+    margin: auto;
+  }
+  .about__content {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .factory__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .show__video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  .assumptionmodal__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  .input__assumption {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+  .input__assumptionlast {
+    margin-right: 0;
+    margin-top: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

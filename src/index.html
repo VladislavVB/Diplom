@@ -52,13 +52,27 @@
                     <div class="modal__container">
                         <div class="modal__title--up">Получите персональное </div>
                         <div class="modal__title--down">коммерческое предложение</div>
-                        <form action="" class="form modal__form">
-                            <input type="text" class="input form__input input__name" placeholder="Ваше имя">
-                            <input type="tel" class="input form__input input__email" placeholder="Ваш e-mail">
-                            <input type="email" class="input form__input input__phone" placeholder="Ваш номер телефона">
-                            <button class="button modal__button">
-                                <div class="text-button">Получить кп!</div>
-                            </button>
+                        <form action="#" class="form hero__form">
+                            <input type="hidden" name="formName" value="hero-form">
+                            <div class="input-group input-group--name hero__input-group">
+                              <label for="user-name" class="label form__label">
+                                <input type="text" name="userName" class="input form__input input  hero__input" id="user-name" placeholder="Ваше имя">
+                              </label>
+                            </div>
+                            <div class="input-group input-group--email hero__input-group">
+                              <label for="user-email" class="label form__label">
+                                <input type="email" name="userEmail" class="input form__input input--email hero__input" id="user-email" placeholder="Ваш email">
+                              </label>
+                            </div>
+                            
+                            <div class="input-group input-group--phone hero__input-group">
+                              <label for="user-phone" class="label form__label">
+                                <input type="tel" name="userPhone" class="input form__input input--phone hero__input" id="user-phone" placeholder="Ваш номер телефона">
+                              </label>
+                            </div>
+                            
+                            <button class="modal__button text-button">Получить КП!</button>
+                            
                         </form>
                         <div class="modal__footer">
                             <img src="img/modalicon.png" alt="">
@@ -291,10 +305,27 @@
             <div class="assumption__content">
                 <div class="assumption__modal">
                     <div class="assumptionmodal__container">
-                        <form action="" class="form assumptionmodal__form">
-                            <input type="text" class="input__assumption">
-                            <input type="tel" class="input__assumption">
-                            <input type="email" class="input__assumptionlast">
+                        <form action="#" class="assumptionmodal__form">
+                            <input type="hidden" name="formName" value="hero-form">
+                            <div class="input-group input-groupass--name ">
+                              <label for="user-name" class="label form__label input__assumption">
+                                <input type="text" name="userName" class="input form__input input  hero__input" id="user-name" placeholder="Ваше имя">
+                              </label>
+                            </div>
+                            <div class="input-group input-groupass--email input__assumption ">
+                              <label for="user-email" class="label form__label">
+                                <input type="email" name="userEmail" class="input form__input input--email hero__input" id="user-email" placeholder="Ваш email">
+                              </label>
+                            </div>
+                            
+                            <div class="input-group input-groupass--phone ">
+                              <label for="user-phone" class="label form__label input__assumptionlast">
+                                <input type="tel" name="userPhone" class="input form__input input--phone hero__input" id="user-phone" placeholder="Ваш номер телефона">
+                              </label>
+                            </div>
+                            
+                    
+                            
                         </form>
                             <button class="button assumptionmodal__button">
                                 <div class="text-button">Получить сейчас!</div>
