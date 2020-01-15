@@ -711,8 +711,50 @@ template {
   border: none;
   margin-top: 6px;
   border-radius: 5px;
+  padding: 16px;
   width: 251px;
   height: 45px;
+  color: #2f2f2f;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 13.55px;
+}
+
+.input__name {
+  position: relative;
+}
+
+.input__name::after {
+  content: url("../img/modal/human.png");
+  position: absolute;
+  z-index: 9;
+  top: 7px;
+  right: 8px;
+}
+
+.input__email {
+  position: relative;
+}
+
+.input__email::after {
+  content: url("../img/modal/post.png");
+  position: absolute;
+  z-index: 9;
+  top: 12px;
+  right: 5px;
+}
+
+.input__phone {
+  position: relative;
+}
+
+.input__phone::after {
+  content: url("../img/modal/mobile.png");
+  position: absolute;
+  z-index: 9;
+  top: 9px;
+  right: 8px;
 }
 
 .factory {
@@ -999,7 +1041,6 @@ template {
 
 .assumption {
   background-color: #eb974e;
-  margin-bottom: 100px;
 }
 
 .assumption__title {
@@ -1080,6 +1121,38 @@ template {
 
 .photo {
   min-height: 400px;
+  max-height: 400px;
+}
+
+.photo__content {
+  min-width: 321px;
+  max-width: 321px;
+  max-height: 200px;
+}
+
+.photo__img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.photo__img::before {
+  content: 'dssd';
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.photo__container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.photo__container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .map__container {

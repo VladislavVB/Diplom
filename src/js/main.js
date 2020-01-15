@@ -1,5 +1,10 @@
+if(!window.jQuery){
+document.write('<script type="text/javascript" src="/js/lib/jquery.js"></script>')
+}
+
 $(document).ready(function () {
 
+   
 
     //слайд
     var mySwiper = new Swiper ('.swiper-container', {
