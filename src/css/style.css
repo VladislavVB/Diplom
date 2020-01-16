@@ -365,8 +365,8 @@ template {
 }
 
 .subtitle {
-  margin-left: 46.5%;
-  margin-right: 50%;
+  margin-left: 48%;
+  margin-right: 48%;
   margin-top: -5px;
 }
 
@@ -529,7 +529,7 @@ template {
           align-items: flex-end;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  min-height: 522px;
+  min-height: 417px;
 }
 
 .modal {
@@ -961,6 +961,7 @@ template {
 }
 
 .assumptionmodal__container {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1000,8 +1001,8 @@ template {
 }
 
 .input__inputmidle {
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .input__assumption {
@@ -1066,13 +1067,8 @@ template {
   height: 100%;
   width: 100%;
   position: relative;
-}
-
-.photo__img::before {
-  content: 'dssd';
-  height: 100%;
-  position: absolute;
-  width: 100%;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .photo__container1 {
@@ -1211,6 +1207,14 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
