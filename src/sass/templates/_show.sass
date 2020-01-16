@@ -1,12 +1,37 @@
 .show
-    
-    min-height: 589px
+    min-height: 575px
     background: url('../img/showbg.jpg') center no-repeat
+    &__title
+        font-family: "Roboto Condensed"
+        font-size: 32px
+        font-weight: 400
+        line-height: 34px
+        text-transform: uppercase
+        color: $black
+        text-align: center
+        padding-top: 40px
+        padding-bottom: 0
+        margin-bottom: 10px
+    
+    
     &__video
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
         width: 621px
         height: 396px
-        border: 5px solid #ffffff
+        border-radius: 5px solid #ffffff
         float: right
         
+        background: url('../img/video-interface.jpg') no-repeat center
+        &::after
+            content: url('../img/play-icon2.png')
+            position: absolute
+            bottom: 7px
+            left: 20px
     &__img
         width: 100%
+.video
+    &__play
+        

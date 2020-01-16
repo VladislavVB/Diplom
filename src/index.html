@@ -38,14 +38,14 @@
     <section class="hero">
         <div class="container">
             <div class="hero__text">
-                <div class="hero__title">Уникальные коммерческие условия</div>
+                <h1 class="hero__title">Уникальные коммерческие условия</h1>
                 <div class="hero__subtitle">по поставкам хлебобулочных и кандитерских изделей от крупнейшего хлебзавода
                     в МО</div>
             </div>
             <div class="hero__content">
                 <div class="dignities">
                     <img src="img/circle1.png" alt="">
-                    <img src="img/circle2.png" alt="">
+                    <img class="dignities__img" src="img/circle2.png" alt="">
                     <img src="img/circle3.png" alt="">
                 </div>
                 <div class="modal">
@@ -92,25 +92,28 @@
             <div class="factory__content">
                 <div class="slider">
                     <div class="swiper-container">
-                        <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide"><img src="img/slide.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="img/slide.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="img/slide.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="img/slide.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="img/slide.jpg" alt=""></div>
-
+                            <div class="swiper-slide">
+                                <img class="swiper-slide__image" src="img/slide.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="swiper-slide__image" src="img/slide.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="swiper-slide__image" src="img/slide.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="swiper-slide__image" src="img/slide.jpg" alt="photo">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="swiper-slide__image" src="img/slide.jpg" alt="photo">
+                            </div>
                         </div>
-                        <!-- If we need pagination -->
-
-
-                        <!-- If we need navigation buttons -->
-
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-next"></div>
-
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination swiper-pagination-white"></div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next swiper-button-white"></div>
+                            <div class="swiper-button-prev swiper-button-white"></div>
                     </div>
                 </div>
                 <div class="factory__text">
@@ -127,11 +130,16 @@
     <!-- /.factory -->
     <section class="show">
         <div class="container">
-            <div class="title">Главные преимущества за 1 минуту</div>
+            <div class="show__title">Главные преимущества за 1 минуту</div>
             <img class="subtitle" src="img/subtitle.png" alt="">
-            <div class="show__video">
-                <img class="show__img" src="img/video1min.jpg" alt="">
+        
+            <div class="show__container">
+                <div class="show__video video" id="player">
+                    <script src="https://www.youtube.com/iframe_api"></script>
+                    <img src="img/play-icon.png" alt="play-icon" class="video__play">
+                </div>
             </div>
+        
         </div>
     </section>
     <!-- /.show -->
@@ -273,25 +281,43 @@
                 </div>
                 <div class="about__slider">
                     <div class="swiper-container">
-                        <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide"><img src="img/video.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="img/video.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="img/video.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="img/video.jpg" alt=""></div>
-                            <div class="swiper-slide"><img src="img/video.jpg" alt=""></div>
-
+                            <div class="swiper-slide">
+                                <div class="about__video" id="player1">
+                                    <script src="https://www.youtube.com/iframe_api"></script>
+                                    <img src="img/videoplay2.png" alt="play-icon" class="aboutvideo__play video__play1" >
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about__video" id="player2">
+                                    <script src="https://www.youtube.com/iframe_api"></script>
+                                    <img src="img/videoplay2.png" alt="play-icon" class="aboutvideo__play video__play2" >
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about__video" id="player3">
+                                    <script src="https://www.youtube.com/iframe_api"></script>
+                                    <img src="img/videoplay2.png" alt="play-icon" class="aboutvideo__play video__play3" >
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about__video" id="player4">
+                                    <script src="https://www.youtube.com/iframe_api"></script>
+                                    <img src="img/videoplay2.png" alt="play-icon" class="aboutvideo__play video__play4" >
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="about__video" id="player5">
+                                    <script src="https://www.youtube.com/iframe_api"></script>
+                                    <img src="img/videoplay2.png" alt="play-icon" class="aboutvideo__play video__play5" >
+                                </div>
+                            </div>
                         </div>
-                        <!-- If we need pagination -->
-
-
-                        <!-- If we need navigation buttons -->
-
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-next"></div>
-
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination swiper-pagination-white"></div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next swiper-button-white"></div>
+                            <div class="swiper-button-prev swiper-button-white"></div>
                     </div>
                 </div>
             </div>
@@ -344,42 +370,42 @@
     <section class="photo">
         <div class="photo__container1">
             <div class="photo__content">
-                <img class="photo__img"src="img/photo1.jpg" alt="">
+                <span class="descr">.</span> <img src="img/photo1.jpg" alt="">
             </div>
             <div class="photo__content">
-                <img class="photo__img"src="img/photo2.jpg" alt="">
+                <span class="descr">.</span> <img src="img/photo2.jpg" alt="">
             </div>
             <div class="photo__content">
-                <img class="photo__img"src="img/photo3.jpg" alt="">
+                <span class="descr">.</span> <img src="img/photo3.jpg" alt="">
             </div>
             <div class="photo__content">
-                <img class="photo__img"src="img/photo4.jpg" alt="">
+                <span class="descr">.</span> <img src="img/photo4.jpg" alt="">
             </div>
             <div class="photo__content">
-                <img class="photo__img"src="img/photo5.jpg" alt="">
+                <span class="descr">.</span> <img src="img/photo5.jpg" alt="">
             </div>
             <div class="photo__content">
-                <img class="photo__img"src="img/photo6.jpg" alt="">
+                <span class="descr">.</span> <img src="img/photo6.jpg" alt="">
             </div>
         </div>
         <div class="photo__container1">
             <div class="photo__content">
-                <img class="photo__img"src="img/photo7.jpg" alt="">
+                <span class="descr">.</span> <img src="img/photo7.jpg" alt="">
             </div>
             <div class="photo__content">
-                <img class="photo__img"src="img/photo8.jpg" alt="">
+                <span class="descr">.</span> <img src="img/photo8.jpg" alt="">
             </div>
             <div class="photo__content">
-                <img class="photo__img"src="img/photo9.jpg" alt="">
+                <span class="descr">.</span> <img src="img/photo9.jpg" alt="">
             </div>
             <div class="photo__content">
-                <img class="photo__img"src="img/photo10.jpg" alt="">
+                <span class="descr">.</span> <img src="img/photo10.jpg" alt="">
             </div>
             <div class="photo__content">
-                <img class="photo__img"src="img/photo11.jpg" alt="">
+                <span class="descr">.</span> <img src="img/photo11.jpg" alt="">
             </div>
             <div class="photo__content">
-                <img class="photo__img"src="img/photo12.jpg" alt="">
+                <span class="descr">.</span> <img src="img/photo12.jpg" alt="">
             </div>
         </div>
     </section>

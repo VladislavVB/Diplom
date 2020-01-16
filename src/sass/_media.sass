@@ -66,13 +66,16 @@
             flex-direction: column
             justify-content: center
     .show
+        background: none
         display: flex
         justify-content: center
+        &__title
+           padding-top: 0
         &__video
             display: flex
             justify-content: center
             align-items: center
-            margin: 0
+            margin: auto
     .assumptionmodal
         &__form
             margin-left: 30%
@@ -128,8 +131,112 @@
     .factory
         background: $bg 
         &__text
-            margin-top: 20px
-    .show
-        background: none
+            margin-top: 20px   
     .about 
         background: url('../img/aboutbgmobile.jpg') center no-repeat
+@media screen and (max-width: 720px)
+    .show
+        min-height: 375px
+        &__title
+            margin-top: 10px
+        &__container
+            margin: auto
+            width: 422px
+            height: 278px
+        &__video
+            position: relative
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 100%
+            height: 100%
+            border-radius: 5px solid #ffffff
+            margin: auto
+            
+            background: url('../img/video-down.jpg') no-repeat center
+            &::after
+                content: url('../img/play-icon2.png')
+                position: absolute
+                bottom: 7px
+                left: 10px
+    .photo
+        display: none
+    .slider
+        max-width: 450px
+    .swiper-button-prev
+        left: 172px
+    .swiper-button-next
+        right: 172px
+@media screen and (max-width: 520px)
+    .hero
+        &__title
+            font-size: 36px
+        &__subtitle
+            font-size: 20px
+    .title
+        font-size: 22px
+    .fuctory
+        &__up
+            font-size: 12px
+    .menu__midle
+        display: none
+    .logo
+        max-width: 73%
+    .factory
+        &__content
+            max-width: 300px
+    .slider
+        max-width: 300px
+        max-height: 180px
+    .swiper-button-prev
+        left: 99px
+    .swiper-button-next
+        right: 99px
+    .show
+        &__title
+            font-size: 22px
+        &__container
+            max-width: 300px
+            height: 200px
+        &__video
+            width: 300px
+            height: 200px
+            background: url('../img/video-mobile.jpg') no-repeat center
+            &::after
+                content: url('../img/play-icon2.png')
+                position: absolute
+                bottom: 3px
+                left: 10px
+    .advantages
+        &__titlecard
+            font-size: 13px
+        &__text
+            font-size: 12px
+    .about
+        background: none
+        background-color: $bg
+        &__slider
+        z-index: 200
+        margin-top: 10px
+        margin: auto
+        max-width: 
+        
+        border: 0px solid $white
+        &__video
+            background: url('../img/video-mobile.jpg') no-repeat center
+            height: 200px
+            width: 300px
+            
+            border-radius: 5px
+            &::after
+                content: url('../img/play-icon2.png')
+                position: absolute
+                bottom: 3px
+                left: 65px
+    .assumption
+        &__title
+            font-size: 22px
+    .map
+        
+        &__container
+           
