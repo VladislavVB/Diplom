@@ -1,6 +1,28 @@
 .map
-    max-height: 
-    
+    position: relative
+    &__icon
+        z-index: 500
+        position: absolute
+        width: 410px
+        height: 162px
+        background: url('../img/mapicon.png') center no-repeat
+        left: 50%
+        right: 25%
+        top: 18%
+        display: flex
+        justify-content: center
+        align-items: center
     &__container
         height: 100%
         width: 100%
+        
+.icon
+    &__text
+        margin-bottom: 35px
+        margin-left: 150px
+    &__title
+        display: block
+        text-transform: uppercase
+        font-family: "Roboto Condensed"
+.email
+    color: $red

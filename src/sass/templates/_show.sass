@@ -1,6 +1,9 @@
 .show
+    
     min-height: 575px
     background: url('../img/showbg.jpg') center no-repeat
+    &__container
+        border-radius: 5px solid #ffffff
     &__title
         font-family: "Roboto Condensed"
         font-size: 32px
@@ -12,8 +15,6 @@
         padding-top: 40px
         padding-bottom: 0
         margin-bottom: 10px
-    
-    
     &__video
         position: relative
         display: flex
@@ -21,15 +22,11 @@
         align-items: center
         width: 621px
         height: 396px
-        border-radius: 5px solid #ffffff
+        
         float: right
         
         background: url('../img/video-interface.jpg') no-repeat center
-        &::after
-            content: url('../img/play-icon2.png')
-            position: absolute
-            bottom: 7px
-            left: 20px
+        
     &__img
         width: 100%
 .video

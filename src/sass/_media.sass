@@ -31,6 +31,8 @@
             flex-wrap: wrap
             min-height: 995px
     .factory
+        background: none
+        background-color: $bg
         &__content
             display: flex
             flex-direction: column
@@ -46,6 +48,14 @@
             margin-left: 3%
             margin-right: 3%
 @media screen and (max-width: 820px)
+    .form
+        &__assumptionmodal
+            flex-direction: column
+            margin: auto
+    .buttonnomidle
+        &__assumptionmodal
+            margin-left: 20px
+            margin-right: 20px
     .header
         max-height: 60px
     .logo
@@ -90,8 +100,7 @@
         &__inputmidle
             margin-right: 0
             margin-left: 0
-            margin-bottom: 6px
-    .input
+            margin-bottom: 15px
         &__assumption
             width: 251px
             height: 45px
@@ -110,7 +119,7 @@
                     content: url('../img/hero/name.png')
                     position: absolute
                     z-indexe 9
-                    top: 15px
+                    top: 25px
                     right: 11px
             &--email
                 position: relative
@@ -118,7 +127,7 @@
                     content: url('../img/hero/post.png')
                     position: absolute
                     z-index: 9
-                    top: 15px
+                    top: 25px
                     right: 11px
             &--phone
                 position: relative
@@ -126,14 +135,18 @@
                     content: url('../img/hero/mobile.png')
                     position: absolute
                     z-index: 9
-                    top: 15px
+                    top: 25px
                     right: 11px
     .factory
         background: $bg 
         &__text
             margin-top: 20px   
     .about 
-        background: url('../img/aboutbgmobile.jpg') center no-repeat
+        background: $bg url('../img/aboutbgmobile.jpg') center no-repeat
+        padding-bottom: 1px
+    .map
+        &__icon
+            display: none
 @media screen and (max-width: 720px)
     .show
         min-height: 375px
@@ -154,11 +167,7 @@
             margin: auto
             
             background: url('../img/video-down.jpg') no-repeat center
-            &::after
-                content: url('../img/play-icon2.png')
-                position: absolute
-                bottom: 7px
-                left: 10px
+            
     .photo
         display: none
     .slider
@@ -167,6 +176,9 @@
         left: 172px
     .swiper-button-next
         right: 172px
+    .advantages
+        &__card
+            min-width: 300px
 @media screen and (max-width: 520px)
     .hero
         &__title
@@ -178,6 +190,8 @@
     .fuctory
         &__up
             font-size: 12px
+            min-width: 200px
+            max-width: 200px
     .menu__midle
         display: none
     .logo
@@ -202,11 +216,7 @@
             width: 300px
             height: 200px
             background: url('../img/video-mobile.jpg') no-repeat center
-            &::after
-                content: url('../img/play-icon2.png')
-                position: absolute
-                bottom: 3px
-                left: 10px
+
     .advantages
         &__titlecard
             font-size: 13px
@@ -228,15 +238,9 @@
             width: 300px
             
             border-radius: 5px
-            &::after
-                content: url('../img/play-icon2.png')
-                position: absolute
-                bottom: 3px
-                left: 65px
+
     .assumption
         &__title
             font-size: 22px
-    .map
-        
-        &__container
+    
            
