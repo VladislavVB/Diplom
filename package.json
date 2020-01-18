@@ -17,7 +17,12 @@
   },
   "homepage": "https://github.com/VladislavVB/Diplom#readme",
   "devDependencies": {
+    "clean-css": "^4.2.1",
     "gulp": "^4.0.2",
     "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp-minify-css": "^1.2.4"
   }
 }

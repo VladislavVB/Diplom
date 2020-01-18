@@ -8,11 +8,27 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>БАЛАШИХА ХЛЕБ</title>
 </head>
 
 <body>
+    <!-- Yandex.Metrika counter -->
+<script>
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+ 
+    ym(57087022, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/57087022" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
     <header class="header">
         <div class="container">
             <div class="menu">
@@ -28,14 +44,14 @@
                     <a class="menu__phone" href="tel:+7(495)777-11-00">8(495)<span class="b">777-11-00</span></a>
                     <div class="header__down">
                         <img class="phoneicon" src="img/phone.png" alt="иконка телефона">
-                        <img class="right" src="img/right.png">
+                        <img class="right" src="img/right.png" alt="иконка телефона" >
                         <a class="phone__down" href="#"> Перезвоните мне</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <section class="hero">
+    <div class="hero">
         <div class="container">
             <div class="hero__text">
                 <h1 class="hero__title">Уникальные коммерческие условия</h1>
@@ -48,7 +64,7 @@
                     <img class="dignities__img" src="img/circle2.png" alt="">
                     <img src="img/circle3.png" alt="">
                 </div>
-                <div class="modal">
+                <div class="modal wow zoomIn slow" data-wow-delay="0.3s" >
                     <div class="modal__container">
                         <div class="modal__title--up">Получите персональное </div>
                         <div class="modal__title--down">коммерческое предложение</div>
@@ -56,7 +72,7 @@
                             <input type="hidden" name="formName" value="modal-form">
                             <div class="input-group modal__input-group">
                                 <label for="customer-name" class="label form__label control__label input-group--name"></label>
-                              <input type="text" name="userName" class="input form__input modal__input input--light input-group--name" id="user-name" placeholder="Как вас зовут:">
+                              <input type="text" name="userName" class="input form__input modal__input input--light input-group--name" id="user-name" placeholder="Ваше имя:">
                             </div>
                             <!-- /.input-group modal__input-group -->
                             <div class="input-group modal__input-group">
@@ -71,7 +87,7 @@
                             <!-- /.input-group modal__input-group -->
                             
                             <!-- /.policy -->
-                            <button class="button modal__button button--primary modal__button">Получить КП!</button>
+                            <button onclick="ym('57087022', 'reachGoal', 'button'); return true;" class="button modal__button button--primary modal__button" data-toggle="modal" ><span class="text-button">Получить КП!</span></button>
                         </form>
                         <div class="modal__footer">
                             <img src="img/modalicon.png" alt="">
@@ -82,8 +98,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="factory">
+    </div>
+    <div class="factory">
         <div class="container">
             <div class="title factory__title">Фотографии нашего завода</div>
             <img class="subtitle" src="img/subtitle.png" alt="">
@@ -125,9 +141,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- /.factory -->
-    <section class="show">
+    <div class="show">
         <div class="container">
             <div class="show__title">Главные преимущества за 1 минуту</div>
             <img class="subtitle" src="img/subtitle.png" alt="">
@@ -140,9 +156,9 @@
             </div>
         
         </div>
-    </section>
+    </div>
     <!-- /.show -->
-    <section class="advantages">
+    <div class="advantages">
         <div class="container">
             <div class="title">наши преимущества</div>
             <img class="subtitle" src="img/subtitle.png" alt="">
@@ -202,11 +218,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- /.advantages -->
-    <section class="catolog">
+    <div class="catolog">
         <div class="container">
-            <div class="title">Каталог продукции</div>
+            <div class="title catolog__title">Каталог продукции</div>
             <img class="subtitle" src="img/subtitle.png" alt="">
             <div class="catolog__content">
                 <div class="catolog__card">
@@ -259,9 +275,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- /.catolog -->
-    <section class="about">
+    <div class="about">
         <div class="container">
             <div class="title">о "балашиха хлеб"</div>
             <img class="subtitle" src="img/subtitle.png" alt="">
@@ -278,8 +294,8 @@
                         приходят сюда из-за стабильной зарплаты, это – хлебопеки, которые приходят сюда по зову сердца.
                         А потому наш хлеб не только качественный и вкусный, но ещё и изготавливается с любовью.</div>
                 </div>
-                <div class="abodut__slider">
-                    <div class="slider">
+                <div class="about__slider " >
+                    <div class="slider__second">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -323,36 +339,35 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- /.about -->
-    <section class="assumption">
+    <div class="assumption">
         <div class="container">
             <div class="assumption__title">Получите персональное предложение</div>
             <img class="subtitle" src="img/assumptionsubtitle.png" alt="">
             <div class="assumption__content">
                 <div class="assumption__modal">
                     <div class="assumptionmodal__container">
-                        <form id="control-form" action="#" class="form__assumptionmodal form control__form">
-                            <input type="hidden" name="formName" value="control-form">
-                            <div class="input-group control__input-group">
+                        <form  class="modal__form form__assumptionmodal form control__form">
+                            <input type="hidden" name="formName" value="modal-form">
+                            <div class="input-group control__input-group input-group modal__input-group">
                                 <label for="customer-name" class="label form__label control__label input-group--name"></label>
-                              <input type="text" name="userName" class="buttonnomidle__assumptionmodal input form__input control__input" id="customer-name" placeholder="Как вас зовут:">
+                              <input type="text" name="userName" class="input form__input modal__input input--light input-group--name buttonnomidle__assumptionmodal input form__input control__input" id="customer-name" placeholder="Ваше имя:">
                             </div>
                             <!-- /.input-group -->
                             <div class="input-group modal__input-group">
                                 <label for="customer-phone" class="label form__label control__label input-group--email"></label>
-                                <input type="email" name="userEmail" class="buttonmidle__assumptionmodal input form__input modal__input input--light" id="user-email" placeholder="Ваш email">
+                                <input type="email" name="userEmail" class="buttonmidle__assumptionmodal input form__input modal__input input--light"  placeholder="Ваш email">
                             </div>
-                            <div class="input-group control__input-group">
+                            <div class="input-group control__input-group input-group modal__input-group" >
                                 <label for="user-email" class="label form__label label--light input-group--phone" ></label>
-                              <input type="tel" name="userPhone" class="buttonnomidle__assumptionmodal input form__input control__input" id="customer-phone" placeholder="Ваш номер телефона:">
+                              <input type="tel" name="userPhone" class=" input form__input modal__input input--light buttonnomidle__assumptionmodal input form__input control__input" id="customer-phone" placeholder="Ваш номер телефона:">
                             </div>
                             <!-- /.input-group -->
                             
-                            
                             <!-- /.policy -->
                         </form>
-                            <button class="button button__assumptionmodal button--primary control__button"><span class="assumptionmodal__text">Получить сейчас</span></button>
+                            <button class="button button__assumptionmodal button--primary control__button"  data-toggle="modal"><span class="assumptionmodal__text">Получить сейчас</span></button>
                                 
                             
                         <div class="assumptionmodal__footer">
@@ -364,9 +379,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- /.assumption -->
-    <section class="photo">
+    <div class="photo">
         <div class="photo__container1">
             <div class="photo__content">
                 <span class="descr">.</span> <img class="photo__img" src="img/photo1.jpg" alt="">
@@ -407,24 +422,25 @@
                 <span class="descr">.</span> <img class="photo__img" src="img/photo12.jpg" alt="">
             </div>
         </div>
-    </section>
+    </div>
     <!-- /.photo -->
-    <section class="map">
+    <div class="map">
         <div class="map__icon">
             <div class="icon__container">
                 <div class="icon__img"></div>
                 <div class="icon__text">
                     <span class="icon__title">МЫ НАХОДИМСЯ:</span>
                     г. Москва, ул. Неверовского, д. 9
-Телефон: +7 (495) 444-44-44 E-mail:  
-<span class="email"> info@ied.ru</span>
+Телефон: +7 (495) 444-44-44 <span class="email">  
+    E-mail:  
+<a href="info@ied.ru"><span class="eemail">info@ied.ru</span></a></span>
                 </div>
             </div>
         </div>
         <div class="map__container"><!-- /.дада катра не та -->
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A97c618923ce4975d196c14554ffe521cd186668f6fd495aef64a9c117665b306&amp;width=100%25&amp;height=563&amp;lang=ru_RU&amp;scroll=false"></script>
+            <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A97c618923ce4975d196c14554ffe521cd186668f6fd495aef64a9c117665b306&amp;width=100%25&amp;height=563&amp;lang=ru_RU&amp;scroll=false"></script>
         </div>
-    </section>
+    </div>
     <!-- /.map -->
     <footer class="footer">
         <div class="footer__text">
@@ -432,12 +448,22 @@
             Адрес: г. Москва, ул. Неверовского, д. 9
         </div>
     </footer>
-    
+    <div class="modal-up">
+        <div class="modal-up__dialog">
+          <button class="modal-up__close"></button>
+          <div class="modal-up__title">Форма отправлена!</div>
+          <div class="social modal-up__social">
+            <strong class="social__title">Сасибо)</strong>
+             
+          </div>
+        </div>
+    </div>
     <!-- /.footer -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

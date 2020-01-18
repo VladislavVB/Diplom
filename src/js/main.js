@@ -4,6 +4,8 @@ document.write('<script type="text/javascript" src="/js/lib/jquery.js"></script>
 
 $(document).ready(function () {
 
+  new WOW().init();
+
   var modal = $('.modal');
   var modalUp = $('.modal-up');
   var modalForm = $('.modal__form');
@@ -168,6 +170,7 @@ $(document).ready(function () {
         },
     })
 
+    //слайд2
 
     //видео
     var player;
@@ -267,6 +270,36 @@ $(document).ready(function () {
             event.target.playVideo();
         
         }
+    
+        var modal = $('.modal');
+        var modalUp = $('.modal-up');
+        
+        var modalForm = $('.modal__form');
+        var controlForm = $('.control__form');
+        var footerForm = $('.footer__form');
+        
+        onSubmitForm(modalForm)
+        onSubmitForm(controlForm)
+        onSubmitForm(footerForm)
+      
+        $('[data-toggle=modal]').on('click', function () {
+          modal.toggleClass('modal--visible');
+        });
+      
+        $('.modal__close').on('click', function () {
+          modal.toggleClass('modal--visible');
+        });
+      
+        $('.modal-up__close').on('click', function () {
+          modalUp.removeClass('modal-up--visible');
+        });
+      
+        $(document).keydown(function () {
+          if (event.keyCode == 27) {
+            modal.removeClass('modal--visible');
+            modalUp.removeClass('modal-up--visible');
+          }
+        });
 
   /*const card1 = document.querySelector('.card1');
   const modalBtn = document.querySelectorAll('[data-toggle=card1]')
@@ -278,7 +311,7 @@ $(document).ready(function () {
     element.addEventListener('click', switchModal);
   });*/
 
-  var modal = $('.card1');
+  /*var modal = $('.card1');
   var modalUp = $('.card1-up');
   
   var modalForm = $('.card1__form');
@@ -426,6 +459,6 @@ $(document).ready(function () {
       modal.removeClass('card6--visible');
       modalUp.removeClass('card1-up--visible');
     }
-  });
+  });*/
 
 });

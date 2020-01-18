@@ -47,6 +47,29 @@
         &__content
             margin-left: 3%
             margin-right: 3%
+@media screen and (max-width: 992px)
+    .phone
+        &__down
+            &:hover
+                border-bottom: 1px dotted $red
+    .catolog
+        &__card
+            &:hover
+                border: 1px solid #ffffff
+        &__button
+            &:hover
+                color: $red
+                background-color: #fff
+    .button
+        &__assumption
+            &:hover
+                background-image: linear-gradient(to top, #03c9a9 0%, #13efcb 100%)
+    .modal
+        &__button
+            &:hover
+                background-image: linear-gradient(to top, #03c9a9 0%, #13efcb 100%)
+    .photo
+        display: none
 @media screen and (max-width: 820px)
     .form
         &__assumptionmodal
@@ -140,13 +163,19 @@
     .factory
         background: $bg 
         &__text
+            min-width: 290px
             margin-top: 20px   
     .about 
         background: $bg url('../img/aboutbgmobile.jpg') center no-repeat
         padding-bottom: 1px
+        &__slider
+            display: none
     .map
         &__icon
             display: none
+    .subtitle
+        display: flex
+        justify-content: center
 @media screen and (max-width: 720px)
     .show
         min-height: 375px
