@@ -818,7 +818,7 @@ div.invalid {
   content: url("../img/hero/name.png");
   position: absolute;
   z-index: 9;
-  top: 0px;
+  top: -2px;
   right: -240px;
 }
 
@@ -830,7 +830,7 @@ div.invalid {
   content: url("../img/hero/post.png");
   position: absolute;
   z-index: 9;
-  top: 0px;
+  top: -2px;
   right: -240px;
 }
 
@@ -842,7 +842,7 @@ div.invalid {
   content: url("../img/hero/mobile.png");
   position: absolute;
   z-index: 9;
-  top: 0px;
+  top: -2px;
   right: -240px;
 }
 
@@ -947,7 +947,9 @@ div.invalid {
 }
 
 .show__container {
-  border-radius: 5px solid #ffffff;
+  float: right;
+  width: 621px;
+  height: 360px;
 }
 
 .show__title {
@@ -974,8 +976,10 @@ div.invalid {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 621px;
-  height: 396px;
+  width: 100%;
+  height: 100%;
+  border: 5px solid #ffffff;
+  border-radius: 15px;
   float: right;
   background: url("../img/video-interface.jpg") no-repeat center;
 }
@@ -1325,39 +1329,40 @@ div.invalid {
   border: none;
 }
 
-.input-groupass--name {
+.inputdown-group--name {
   position: relative;
 }
 
-.input-groupass--name::after {
+.inputdown-group--name::after {
   content: url("../img/hero/name.png");
   position: absolute;
-  top: 25px;
-  right: 11px;
+  z-index: 9;
+  top: -4px;
+  right: -240px;
 }
 
-.input-groupass--email {
+.inputdown-group--email {
   position: relative;
 }
 
-.input-groupass--email::after {
+.inputdown-group--email::after {
   content: url("../img/hero/post.png");
   position: absolute;
   z-index: 9;
-  top: 25px;
-  right: 15px;
+  top: 0px;
+  right: -260px;
 }
 
-.input-groupass--phone {
+.inputdown-group--phone {
   position: relative;
 }
 
-.input-groupass--phone::after {
+.inputdown-group--phone::after {
   content: url("../img/hero/mobile.png");
   position: absolute;
   z-index: 9;
-  top: 25px;
-  right: 10px;
+  top: 0px;
+  right: -244px;
 }
 
 .photo {
@@ -1604,6 +1609,10 @@ div.invalid {
   max-width: 511px;
 }
 
+.footer__icon {
+  margin-top: 32px;
+}
+
 @media screen and (max-width: 1090px) {
   .menu__right {
     margin-right: 2%;
@@ -1801,34 +1810,34 @@ div.invalid {
     border-radius: 5px;
     border: none;
   }
-  .input-groupass--name {
+  .inputdown-group--name {
     position: relative;
   }
-  .input-groupass--name::after {
+  .inputdown-group--name::after {
     content: url("../img/hero/name.png");
     position: absolute;
-    top: 25px;
-    right: 11px;
+    top: -3px;
+    right: -260px;
   }
-  .input-groupass--email {
+  .inputdown-group--email {
     position: relative;
   }
-  .input-groupass--email::after {
+  .inputdown-group--email::after {
     content: url("../img/hero/post.png");
     position: absolute;
     z-index: 9;
-    top: 25px;
-    right: 11px;
+    top: -3px;
+    right: -260px;
   }
-  .input-groupass--phone {
+  .inputdown-group--phone {
     position: relative;
   }
-  .input-groupass--phone::after {
+  .inputdown-group--phone::after {
     content: url("../img/hero/mobile.png");
     position: absolute;
     z-index: 9;
-    top: 25px;
-    right: 11px;
+    top: -3px;
+    right: -260px;
   }
   .factory {
     background: #fff9e6;
@@ -1869,22 +1878,17 @@ div.invalid {
     width: 422px;
     height: 278px;
   }
-  .show__video {
-    position: relative;
+  .container__show {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px solid #ffffff;
-    margin: auto;
-    background: url("../img/video-down.jpg") no-repeat center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .photo {
     display: none;

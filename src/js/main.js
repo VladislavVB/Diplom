@@ -316,7 +316,7 @@ var myMapTemp, myPlacemarkTemp;
 function init () {
   var myMapTemp = new ymaps.Map("map-yandex", {
     center: [55.794496, 37.702655], // координаты центра на карте
-    zoom: 14.5, // коэффициент приближения карты
+    zoom: 15, // коэффициент приближения карты
     controls: ['zoomControl', 'fullscreenControl'] // выбираем только те функции, которые необходимы при использовании
   });
   var myPlacemarkTemp = new ymaps.Placemark([55.730138, 37.594238], {
@@ -326,7 +326,7 @@ function init () {
       // Необходимо указать данный тип макета.
       iconLayout: 'default#imageWithContent',
       // Своё изображение иконки метки.
-      iconImageHref: 'img/map-marker.png',
+      iconImageHref: 'img/mapp-marker.png',
       // Размеры метки.
       iconImageSize: [50, 50],
       // Смещение левого верхнего угла иконки относительно
