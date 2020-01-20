@@ -1,37 +1,43 @@
 .advantages
-    background-color: #fff9e6
-    padding-bottom: 40px
-    &__content
-        display: flex
-        flex-direction: column
-        flex-wrap: wrap
-        max-height: 495px
-        padding-top: 20px
-        justify-content: space-between
-    &__card
-        margin: auto
-        min-width: 520px
-        max-height: 106px
-        display: flex
-        margin-bottom: 27px
-    &__textcard
-        max-width: 360px
-        min-height: 154px
-        padding-left: 22px
-    &__titlecard
-        margin: 0
-        font-size: 18px
-        font-weight: bold
-        line-height: 21px
-        font-family: Roboto
-        color: $black
+  background: $main
+  padding-bottom: 4rem
+  &__row
+    margin-top: 1rem
+  &__fact-wrapper
+    margin-bottom: 1.714rem
+    &--inner
+      display: flex
+      justify-content: space-between
+      align-items: center
+      min-height: 105px
+  &__fact-text
+    &-wrapper
+      display: flex
+      flex-direction: column
+      min-height: 105px
+      margin-left: 1.214rem
+      justify-content: space-around
+      color: #1b1b1b
+    &__title
+      font-weight: bold
+      font-size: 1.285rem
+      display: inline-block
     &__text
-        margin-top: 5px
-        font-family: Roboto
-        font-size: 14.5px
-        font-weight: 300
-        line-height: 21px
-        color: $black
-.cardimg
-    max-width: 98px
-    max-height: 98px
+      font-weight: 300
+      line-height: 1.5rem
+      font-size: 1.071rem
+      display: inline-block
+      max-width: 360px
+.col-50
+  width: 50%
+  &--left
+    margin-right: 2.64rem
+.fact
+  &-ring
+    background: url('../img/advantages/ring-small.png') center no-repeat
+    min-height: 105px
+    min-width: 105px
+    display: flex
+    align-items: center
+    justify-content: center
+    
