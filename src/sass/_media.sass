@@ -40,7 +40,10 @@
     &__fact-text
         &__text
           max-width: 300px
-
+  .photos
+    &__text
+      &--second
+        margin-top: 6rem
 @media screen and ( max-width: 1100px )
   html
     font-size: 14px
@@ -50,7 +53,25 @@
     &__image
       width: 291px
       height: 170px
+  .form
+    &__button
+      &:hover
+        background-image: linear-gradient(to top, #03c9a9 0%, #13efcb 100%)
 @media screen and ( max-width: 991px )
+  .hero
+    &__form
+      &__button
+        &:hover
+          cursor: default
+  .card
+    &__item
+      &:hover
+        border: 1px solid transparent
+  .info
+    &:hover
+      cursor: default
+      background: transparent
+      color: $red
   .photos
     background: none
     background-color: #fff9e6
@@ -119,7 +140,7 @@
   .hero
     &__form
       &__dialogue
-        display: none
+        margin-top: 10px
 @media screen and ( max-width: 768px )
   .hero
     &__image
@@ -165,8 +186,11 @@
 
 @media screen and ( max-width: 576px )
   .menu
+    width: 90%
     &__text-wrapper
       margin-left: 0
+    &__contacts
+      max-width: 500px
   .header
     min-height: 4rem
   .hero

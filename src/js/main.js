@@ -88,11 +88,7 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    // breakpoints: {
-    //   991: {
-    //     noSwiping:false,
-    //   }
-    // },
+    
   });
 
   var mySwiper1 = new Swiper ('#swiper-container-about', {
@@ -245,9 +241,9 @@ $(document).ready(function () {
           maxlength: 10
         },
         userPhone: "required",
-        userQuestion: {
+        userPhone: {
           required: true,
-          minlength: 20,
+          minlength: 17,
           maxlength: 400
         },
         // compound rule
