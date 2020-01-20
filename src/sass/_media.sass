@@ -50,25 +50,21 @@
     &__image
       width: 291px
       height: 170px
-  // .hero
-  //     &__fact-wrapper
-  //       background: none
-  //     &__fact-text
-  //       max-width: none
-  //       max-height: none
-  //       background: url('../img/ring-big.png') no-repeat center
-  //       width: 198px
-  //       height: 198px
-  //       &--last
-  //         max-width: none
-
-
 @media screen and ( max-width: 991px )
+  .photos
+    background: none
+    background-color: #fff9e6
+  .contacts
+    &__button
+      font-size: 1rem
+      border-bottom: none
   .photo
     display: none
   .container
     width: 90%
   .hero
+    background: none
+
     &__title
       font-size: 2.9rem
     &__subtitle
@@ -144,9 +140,10 @@
     &__figures
       font-size: 1rem
     &__button
-      font-size: 0.7rem
+      margin-top: 4px
+      font-size: 0.8rem
   .catalogue
-    padding-bottom: 74rem
+    padding-bottom: 95rem
     &__wrapper
       flex-direction: column
   .card
@@ -154,6 +151,7 @@
       &-title
         font-size: 1.1rem
       &-text
+        max-width: 300px
         font-size: 0.9rem
   .photos-line
     &__image
@@ -166,6 +164,9 @@
     align-items: center
 
 @media screen and ( max-width: 576px )
+  .menu
+    &__text-wrapper
+      margin-left: 0
   .header
     min-height: 4rem
   .hero
@@ -179,6 +180,7 @@
         font-size: 0.7rem
         max-width: 15px
   .menu
+    position: absolute
     margin-top: 1.5rem
   .logo
     display: none
@@ -212,17 +214,19 @@
         transform: translateX (-20%)
 
 @media screen and ( min-width: 320px ) and ( max-width: 575px )
+  .call-back
+    display: none
   .menu
     &__text
       &--upper
         font-size: 1.25rem
       &--downer
-        font-size: 0.6rem
+        display: none
   .contacts
     &__phone
-      font-size: 0.6rem
+      font-size: 1rem
     &__button
-      font-size: 0.4rem
+      font-size: 0.9rem
   .hero
     &__title
       font-size: 1.7rem
